@@ -91,7 +91,8 @@
                         >  <!---->
                     </a>
                 </article>
-                <article class="pricing-card">
+                <article class="pricing-card featured">
+                    <div class="popular-tag">Most Popular</div>
                     <h3 class="tier-name">Pro Cluster</h3>
                     <p class="tier-desc">For Small Bisnuesses</p>
                     <div class="tier-price">
@@ -122,7 +123,79 @@
         </section>
 
         <!--Calculator/Form Section -->
-        
+        <section id="register" class="section-container">
+            <div class="form-wrapper">
+                <header class="section-header">
+                    <h2 class="section-title"> <!--Add Info--> </h2>
+                    <p class="section-subtitle">   <!--Add Info--> </p>
+                </header>
+
+                <form action="#" method="post" class="lead-form">
+                    <div class="form-group">
+                        <label for="work-email" class="from-label">work email 
+                            <span class="required-mark">*</span></label>
+                        <input
+                        type="email"
+                        name="workEmail"
+                        id="work-email"
+                        class="form-control"
+                        placeholder="abc@yxz.com"
+                        required
+                        />
+                    </div>
+                    <div class="form-group"
+                        <label for="node-volume" class="form-label"
+                        >Node Count</label>
+
+                        <input
+                        type="number"
+                        name="node-volume"
+                        id="node-volume"
+                        min="1"
+                        max="1000"
+                        step="1"
+                        placeholder="50"
+                        />
+                        <span class="input-hint">  <!--Add Data--> </span>
+                    </div>
+                    <div class="form-group"
+                        <label for="log-volume" class="form-label"
+                            >log Throughput</label
+                            >
+                            
+                        <input
+                        type="number"
+                        name="log-volume"
+                        id="log-volume"
+                        min="1"
+                        max="1000"
+                        step="1"
+                        placeholder="50"
+                        />
+                        <span class="input-hint">  <!--Add Data--> </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="business-tier" class="form-label"
+                        >Target Tier Selection</label>
+
+                        <select
+                        name="business-tier"
+                        id="business-tier"
+                        class="form-control"
+                        >
+                        <option value="Developer">Developer</option>
+                        <option value="pro-cluster">Pro Cluster</option>
+                        <option value="Enterprise">Enterprise Dedicated (Custom)</option>
+                    </select>
+                    </div>
+                </form>
+            </div>
+            <!--submit button-->
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                Generate Response
+            </button>
+        </section>
     </main>
     <!--Footer section-->
     <footer>
