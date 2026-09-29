@@ -2,8 +2,10 @@
     /* Variables*/
     --bg-light: #F0FDF4;
     --bg-card: #FFFFFF;
+    --primary: #10B981;
     --primary-hover: #047857;
     --text-main: #064E3B;
+    --text-muted: #374151;
     --border-color: #DCFCE7;
     --accent: #059669;
     --font-family: -apple-system, BlinkMacSystemFont, 
@@ -44,4 +46,84 @@ html{
     background-color var(--transition-speed),
     transform var(--transition-speed),
     border-color var(--transition-speed);
+}
+
+/* navigation with Tabs */
+.btn:focus-visible{
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary);
+    transform: translateY(2px);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--text-main);
+    border: var(--border-color);
+}
+.btn-secondary:hover{
+    background-color: var(--bg-card);
+    border-color: var(--text-muted);
+}
+.btn-outline{
+background-color: transparent;
+color: var(--primary);
+border-color: var(--primary);
+}
+.btn-outline:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+.btn-block {
+    display: flex;
+    width: 100%; 
+}
+.btn-small{
+    padding: 0.5rem, 1rem;
+    font-size: 1.125rem;
+}
+    /*header */
+.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(6, 78, 59, .15);
+    border-bottom: 1px solid var(--border-color);
+}
+.brand-logo{
+    font-size: 1.125rem;
+    font-weight: 750;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo-icon{
+    color: var(--primary);
+}
+/* nav bar*/
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-link{
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: var(--transition-speed);
+}
+.nav-link:hover{
+    color: var(--text-main);
 }
