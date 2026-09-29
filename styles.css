@@ -1,0 +1,47 @@
+:root{
+    /* Variables*/
+    --bg-light: #F0FDF4;
+    --bg-card: #FFFFFF;
+    --primary-hover: #047857;
+    --text-main: #064E3B;
+    --border-color: #DCFCE7;
+    --accent: #059669;
+    --font-family: -apple-system, BlinkMacSystemFont, 
+    "segoe UI", Arial, sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/*Clear default styles*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*font family, and backgroun*/
+html{
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    /*text color*/
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Styling for buttons */
+.btn{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+    background-color var(--transition-speed),
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
