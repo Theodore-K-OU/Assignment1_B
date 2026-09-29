@@ -31,52 +31,53 @@ As a developer, I want to submit a pre-registration form with required fields to
 ## API provision Lead Capture (pre-requestion form, required fields to receive API sandbox details.)
 ---
 ## Component layout
-
-Document
-└── html
-    ├── head
-    └── body
-        ├── header
-        │   └── nav
-        │       ├── a (href="#features")
-        │       ├── a (href="#pricing")
-        │       ├── a (href="#register")
-        │       └── a.btn (href="#deploy") ["Deploy Free Cluster"]
-        ├── main
-        │   ├── section#hero
-        │   │   ├── div.badge
-        │   │   ├── h1.hero-title ["primary value proposition"]
-        │   │   ├── p.hero-subtitle
-        │   │   └── div.cta
-        │   │       ├── a.btn-primary
-        │   │       └── a.btn-secondary
-        │   ├── section#features
-        │   │   ├── header.section-header
-        │   │   │   └── h2 ["built for high scale sales"]
-        │   │   └── div.feature-grid
-        │   │       ├── article ["Latency Tracking"]
-        │   │       ├── article ["Log Aggregation"]
-        │   │       └── article ["Auto-Remediation"]
-        │   ├── section#price-grid
-        │   │   ├── header.section-header
-        │   │   │   ├── h3.section-title
-        │   │   │   └── p.section-subtitle
-        │   │   └── div.pricing-grid
-        │   │       ├── article.developer
-        │   │       ├── article.pro-cluster
-        │   │       └── article.enterprise-dedicated
-        │   └── section#register
-        │       └── form
-        │           ├── fieldset
-        │           │   ├── legend
-        │           │   ├── label (for="email")
-        │           │   ├── input#email (type="email", required)
-        │           │   ├── label (for="node-volume")
-        │           │   ├── input#node-volume (type="number", min="1", max="1000", step="1")
-        │           │   ├── label (for="log-volume")
-        │           │   └── input#log-volume (type="number", min="1", max="1000", step="1")
-        │           └── button.btn-submit (type="submit") ["Submit"]
-        └── footer
-            ├── p ["Copy Dev+"]
-            └── ul.footer-links
+```text
+    Document
+    └── html
+        ├── head
+        └── body
+            ├── header
+            │   └── nav
+            │       ├── a (href="#features")
+            │       ├── a (href="#pricing")
+            │       ├── a (href="#register")
+            │       └── a.btn (href="#deploy") ["Deploy Free Cluster"]
+            ├── main
+            │   ├── section#hero
+            │   │   ├── div.badge
+            │   │   ├── h1.hero-title ["primary value proposition"]
+            │   │   ├── p.hero-subtitle
+            │   │   └── div.cta
+            │   │       ├── a.btn-primary
+            │   │       └── a.btn-secondary
+            │   ├── section#features
+            │   │   ├── header.section-header
+            │   │   │   └── h2 ["built for high scale sales"]
+            │   │   └── div.feature-grid
+            │   │       ├── article ["Latency Tracking"]
+            │   │       ├── article ["Log Aggregation"]
+            │   │       └── article ["Auto-Remediation"]
+            │   ├── section#price-grid
+            │   │   ├── header.section-header
+            │   │   │   ├── h3.section-title
+            │   │   │   └── p.section-subtitle
+            │   │   └── div.pricing-grid
+            │   │       ├── article.developer
+            │   │       ├── article.pro-cluster
+            │   │       └── article.enterprise-dedicated
+            │   └── section#register
+            │       └── form
+            │           ├── fieldset
+            │           │   ├── legend
+            │           │   ├── label (for="email")
+            │           │   ├── input#email (type="email", required)
+            │           │   ├── label (for="node-volume")
+            │           │   ├── input#node-volume (type="number", min="1", max="1000", step="1")
+            │           │   ├── label (for="log-volume")
+            │           │   └── input#log-volume (type="number", min="1", max="1000", step="1")
+            │           └── button.btn-submit (type="submit") ["Submit"]
+            └── footer
+                ├── p ["Copy Dev+"]
+                └── ul.footer-links
+```
 --- 
