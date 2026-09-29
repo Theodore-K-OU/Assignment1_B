@@ -19,3 +19,17 @@ count and log throughput requirements into a form with numeric bounds to verify 
 compatibility.   
 ● Story 5 (API Provisioning Lead Capture): As a developer, I want to submit a 
 pre-registration form with required fields to receive API sandbox provisioning details. 
+
+
+Requirements
+Landing Hero Page with Core Value metrics, Nav bar, High Contrast “Deploy Free 
+Cluster” CTA button 
+• Feature Grid (Latency Tracking, Log Aggregation, Auto-Remediation) 
+• Compute Tier (Developer, Pro Cluster, Enterprise Dedicated) Elevated visual 
+(most popular Badge 
+• Workload Estimation Form (Enter node count, log throughput, numeric bounds 
+to verify tier compatibility) 
+• API provision Lead Capture (pre-requestion form, required fields to receive API 
+sandbox details.)
+
+conponment layout

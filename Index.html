@@ -143,7 +143,7 @@
 
                     <form action="#" method="post" class="lead-form">
                         <div class="form-group">
-                            <label for="work-email" class="from-label">work email 
+                            <label for="work-email" class="form-label">work email
                                 <span class="required-mark">*</span></label>
                             <input
                             type="email"
@@ -151,10 +151,9 @@
                             id="work-email"
                             class="form-control"
                             placeholder="abc@yxz.com"
-                            required
-                            />
+                            required>
                         </div>
-                        <div class="form-group"
+                        <div class="form-group">
                             <label for="node-volume" class="form-label"
                             >Node Count</label>
 
@@ -166,14 +165,12 @@
                             max="1000"
                             step="1"
                             placeholder="50"
-                            />
+                            >
                             <span class="input-hint">Specify the number of virtual nodes.</span>
                         </div>
-                        <div class="form-group"
+                        <div class="form-group">
                             <label for="log-volume" class="form-label"
-                                >log Throughput (GB/Day)</label
-                                >
-
+                                >log Throughput (GB/Day)</label>
                             <input
                             type="number"
                             name="log-volume"
@@ -182,7 +179,7 @@
                             max="1000"
                             step="1"
                             placeholder="50"
-                            />
+                            >
                             <span class="input-hint">Estimated daily raw log intake in Gigabytes.</span>
                         </div>
 
@@ -200,12 +197,12 @@
                             <option value="Enterprise">Enterprise Dedicated (Custom)</option>
                         </select>
                         </div>
+                    <!--submit button-->
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                         Generate Cluster Config
+                        </button>
                     </form>
                 </div>
-                <!--submit button-->
-                <button type="submit" class="btn btn-primary btn-block btn-lg">
-                    Generate Cluster Config
-                </button>
             </section>
             
         </main>
