@@ -31,64 +31,52 @@ As a developer, I want to submit a pre-registration form with required fields to
 ## API provision Lead Capture (pre-requestion form, required fields to receive API sandbox details.)
 ---
 ## Component layout
-'''text
-<head>
-</head>
-<body>
-    <header>
-        <nav> 
-            <a #feature >
-            <a #pricing >
-            <a #regesitar>
-        <!--CAll to Action-->
-            <a btn Deploy Free Cluster>
-         </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div badge> </div>
-            <h1 hero-title></h1> "primary value prospotion"
-            <p hero-subtitle> </p>
-            <div CTA>
-                <a btn-primary>
-                <a btn-secondary>
-        </section>
-        <section features>
-            <header section-header>
-                <h2>built for high scale sales</h2>
-                <div feature-grid>
-                    <article>Latency Tracking</a>
-                    <article>Log Aggregation</a>
-                    <article>Auto-Remediation</a>
-                </div>
-            </header>
-        </section>
-        <section price-grid>
-            <headr section-header>
-                <h3 section-title></h3>
-                <p section-subtitle></p>
-            </header>
-            <div pricing-grid>
-                <article developer>
-                <article Procluster>
-                <article eterprise-dedicated>
-            </div>
-        </section>
-        <section register>
-            <form>
-                <fieldset>
-                    <legend>
-                    <label for email>+<imput type email> required
-                    <label for node-volume>+<imput type "number" min=1 max=1000 step 1
-                    <label for log-volume>+<input type "number" for log-volume> min=1 max=1000 step 1
-                <a btn sumbit>
-            </form>
-        </section>
-       <footer>
-        <p>Copy Dev+</p>
-        <ul class footerlinks>
-       </footer>
-       </body>
-   </body>
-  
+
+Document
+└── html
+    ├── head
+    └── body
+        ├── header
+        │   └── nav
+        │       ├── a (href="#features")
+        │       ├── a (href="#pricing")
+        │       ├── a (href="#register")
+        │       └── a.btn (href="#deploy") ["Deploy Free Cluster"]
+        ├── main
+        │   ├── section#hero
+        │   │   ├── div.badge
+        │   │   ├── h1.hero-title ["primary value proposition"]
+        │   │   ├── p.hero-subtitle
+        │   │   └── div.cta
+        │   │       ├── a.btn-primary
+        │   │       └── a.btn-secondary
+        │   ├── section#features
+        │   │   ├── header.section-header
+        │   │   │   └── h2 ["built for high scale sales"]
+        │   │   └── div.feature-grid
+        │   │       ├── article ["Latency Tracking"]
+        │   │       ├── article ["Log Aggregation"]
+        │   │       └── article ["Auto-Remediation"]
+        │   ├── section#price-grid
+        │   │   ├── header.section-header
+        │   │   │   ├── h3.section-title
+        │   │   │   └── p.section-subtitle
+        │   │   └── div.pricing-grid
+        │   │       ├── article.developer
+        │   │       ├── article.pro-cluster
+        │   │       └── article.enterprise-dedicated
+        │   └── section#register
+        │       └── form
+        │           ├── fieldset
+        │           │   ├── legend
+        │           │   ├── label (for="email")
+        │           │   ├── input#email (type="email", required)
+        │           │   ├── label (for="node-volume")
+        │           │   ├── input#node-volume (type="number", min="1", max="1000", step="1")
+        │           │   ├── label (for="log-volume")
+        │           │   └── input#log-volume (type="number", min="1", max="1000", step="1")
+        │           └── button.btn-submit (type="submit") ["Submit"]
+        └── footer
+            ├── p ["Copy Dev+"]
+            └── ul.footer-links
 --- 
