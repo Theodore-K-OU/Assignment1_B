@@ -183,3 +183,30 @@ max-width: 700px;
     color: var(--text-muted);
 }
 /* feature grid */
+.feature-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.feature-card{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
+.feature-card:hover{
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+.feature-title{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.feature-desc{
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+/* Pricing Matrix */
